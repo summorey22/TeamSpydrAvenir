@@ -10,13 +10,23 @@
     <link rel="icon" type="image/png" href="./favicon-32x32.png">
     <title>Team Spyder - Peak into Future</title>
 </head>
-<body>
+<body onload="init">
+    <h1> Future of Mankind</h1>
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="changeTheme" >
     </div>
-    <div class="progress w-50 border border-1 border-light rounded-pill position-absolute top-50 start-50 translate-middle" id="rahili">
-        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="zali"></div>
+    <div class="progress w-75 border border-1 border-light rounded-pill position-absolute top-50 start-50 translate-middle" id="rahili">
+        <div class="progress-bar" role="progressbar" id="progresso" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="zali"></div>
     </div>
+
+    <div class="container d-flex flex-row d-flex d-flex justify-content-between position-absolute top-50 start-50 translate-middle w-75" style="width: 100%">
+        <div class="rounded circle border border-1 border-light rounded-pill" id="1" style="height: 15px;width: 15px; background-color: white;" onclick="baap(1)"></div>
+        <div class="rounded circle border border-1 border-light rounded-pill" id="2" style="height: 15px;width: 15px; background-color: black;" onclick="baap(2)"></div>
+        <div class="rounded circle border border-1 border-light rounded-pill" id="3" style="height: 15px;width: 15px; background-color: black;" onclick="baap(3)"></div>
+        <div class="rounded circle border border-1 border-light rounded-pill" id="4" style="height: 15px;width: 15px; background-color: black;" onclick="baap(4)"></div>
+        <div class="rounded circle border border-1 border-light rounded-pill" id="5" style="height: 15px;width: 15px; background-color: black;" onclick="baap(5)"></div>
+    </div>
+    
     <script src="./index.js"></script>
 </body>
 </html>
