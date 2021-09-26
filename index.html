@@ -11,23 +11,31 @@
     <title>Team Spyder - Peak into Future</title>
 </head>
 <body onload="init()">
-    <img src="./IEEE_whitenobg.png" alt="IEEE LOGO" style="height: 100px; width: auto;">
+    <a href="./info.html"><img src="./IEEE_whitenobg.png" alt="IEEE LOGO" style="height: 100px; width: auto;" id="logo"></a>
     <h1 class="position-absolute start-50 translate-middle" style="top: 10%; font-size: 4em;">Future of Mankind</h1>
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="changeTheme" style="height: 1.5em; width: 2.5em;">
     </div>
-    <div class="progress w-75 border border-1 border-light rounded-pill position-absolute top-50 start-50 translate-middle" id="rahili">
-        <div class="progress-bar" role="progressbar" id="progresso" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="zali"></div>
+    <div id="rahili" class="progress w-75 border border-1 border-light rounded-pill position-absolute start-50 translate-middle" style="top: 60%">
+        <div class="progress-bar" role="progressbar" id="progresso" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
 
-    <div class="container d-flex flex-row d-flex d-flex justify-content-between position-absolute top-50 start-50 translate-middle w-75" style="width: 100%">
+    <div class="card position-absolute d-flex" style="width: 30rem; left: calc(50% - 15rem); top: calc(10% + 4rem); height: 18rem;">
+        <img src="./elon.jpg" class="card-img-top d-flex" alt="Elon on Mars" style="height: 12rem; width: 28rem; margin-left: 1rem; margin-top: 0.75em; border-radius: 1rem;">
+        <div class="card-body d-flex flex-column">
+            <h5><b>Year: 2030</b></h3>
+            <p class="card-text">Elon Musk colonized mars</p>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-row justify-content-between position-absolute start-50 translate-middle w-75" style="width: 100%; top: 60%">
         <div class="rounded circle border border-1 border-light rounded-pill" id="1" style="height: 15px;width: 15px; background-color: white;" onclick="baap(1)"></div>
         <div class="rounded circle border border-1 border-light rounded-pill" id="2" style="height: 15px;width: 15px; background-color: black;" onclick="baap(2)"></div>
         <div class="rounded circle border border-1 border-light rounded-pill" id="3" style="height: 15px;width: 15px; background-color: black;" onclick="baap(3)"></div>
         <div class="rounded circle border border-1 border-light rounded-pill" id="4" style="height: 15px;width: 15px; background-color: black;" onclick="baap(4)"></div>
         <div class="rounded circle border border-1 border-light rounded-pill" id="5" style="height: 15px;width: 15px; background-color: black;" onclick="baap(5)"></div>
     </div>
-    
-    <script src="./index.js"></script>
+    <img src="./last1.png" style="width: 50%; height: 20%;  position: absolute; bottom: 0%; left: 25%">
 </body>
+<script src="./index.js"></script>
 </html>

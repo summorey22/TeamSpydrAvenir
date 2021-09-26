@@ -2,12 +2,14 @@ var toggle_switch = document.getElementById('flexSwitchCheckDefault');
 function changeTheme() {
     if(toggle_switch.checked) {
         document.body.style.setProperty('background-color', '#FFFFFF', 'important');
-        document.getElementById('zali').style.setProperty('background-color', '#272727', 'important');
+        document.getElementById('progresso').style.setProperty('background-color', '#272727', 'important');
         document.getElementById('rahili').style.setProperty('background-color', '#F0F8FF', 'important');
+        document.getElementById('logo').src='./ieee-blue.png';
     } else {
         document.body.style.setProperty('background-color', '#161616', 'important');
-        document.getElementById('zali').style.setProperty('background-color', '#F0F8FF', 'important');
+        document.getElementById('progresso').style.setProperty('background-color', '#F0F8FF', 'important');
         document.getElementById('rahili').style.setProperty('background-color', '#272727', 'important');
+        document.getElementById('logo').src='IEEE_whitenobg.png';
     }
 }
 
